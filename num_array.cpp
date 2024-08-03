@@ -1,6 +1,5 @@
 #include <vector>
 #include <iostream>
-#include <initializer_list>
 #include <random>
 
 template <typename T>
@@ -10,7 +9,6 @@ private:
     std::vector<size_t> shape;
     std::vector<size_t> strides;
     size_t total_size;
-    std::vector<size_t> indices;
 
     void calculate_strides() {
         strides.resize(shape.size());
